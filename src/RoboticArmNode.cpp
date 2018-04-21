@@ -18,8 +18,8 @@ RoboticArmNode::RoboticArmNode()
   // privNh.param<int>(    "int_val"    ,    int_val   ,   1.0);
   // privNh.param<bool>(   "bool_val"   ,    bool_val  ,   true);
 
-  privNh.param<int>(    "max_speed"    ,    max_speed   ,   3   );
-  privNh.param<double>( "rate"         ,    rate        ,   20.0);
+  privNh.param<int>(    "max_speed"    ,    max_speed   ,   2   );
+  privNh.param<double>( "rate"         ,    rate        ,   50.0);
 
   _max_speed = std::abs(max_speed);
   if(rate < 1.0)

@@ -20,6 +20,7 @@ public:
   }
   void attach(const int servo)
   {
+    constrain(0,1,2);
     _servo.attach(servo);
   }
 
