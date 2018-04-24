@@ -71,7 +71,7 @@ private: //functions
     msg.joint_2 = 90;
     msg.joint_3 = 0;
     msg.joint_4 = 0;
-    msg.joint_5 = 0;
+    msg.joint_5 = 75;
     return msg;
   }
 
@@ -83,7 +83,7 @@ private: //functions
     msg.joint_2 = 0;
     msg.joint_3 = 0;
     msg.joint_4 = 0;
-    msg.joint_5 = 0;
+    msg.joint_5 = 32;
     return msg;
   }
 

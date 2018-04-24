@@ -75,11 +75,11 @@ void RoboticArmNode::loop_callback(const ros::TimerEvent& e)
   _curr_pos.joint_2 += _curr_speed.joint_2;
   _curr_pos.joint_2 = RoboticArmNode::constrain(_curr_pos.joint_2, -90, 90);
   _curr_pos.joint_3 += _curr_speed.joint_3;
-  _curr_pos.joint_3 = RoboticArmNode::constrain(_curr_pos.joint_3, -90, 90);
+  _curr_pos.joint_3 = RoboticArmNode::constrain(_curr_pos.joint_3, -70, 90);
   _curr_pos.joint_4 += _curr_speed.joint_4;
   _curr_pos.joint_4 = RoboticArmNode::constrain(_curr_pos.joint_4, -90, 90);
   _curr_pos.joint_5 += _curr_speed.joint_5;
-  _curr_pos.joint_5 = RoboticArmNode::constrain(_curr_pos.joint_5, -90, 90);
+  _curr_pos.joint_5 = RoboticArmNode::constrain(_curr_pos.joint_5, -35, 90);
   _pub_arm_pos.publish(_curr_pos);
 }
 
